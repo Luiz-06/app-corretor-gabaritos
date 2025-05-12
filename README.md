@@ -67,78 +67,7 @@ Imagine um professor que acabou de aplicar uma prova em sala de aula. Normalment
 
 Além disso, o app pode funcionar offline, o que é útil para escolas com acesso limitado à internet. No futuro, pretendemos adicionar funcionalidades como exportação de relatórios em PDF e leitura em tempo real das respostas.
 
----
 
-# Estrutura do Projeto
-
-Este projeto foi organizado de forma a manter o código modular e fácil de manter. Abaixo está uma explicação detalhada de cada pasta e sua função dentro do projeto.
-
-## 📁 Estrutura do Projeto
-
-### 📁 `assets/`
-Contém arquivos estáticos utilizados no aplicativo, como imagens, ícones, fontes e outros recursos gráficos.
-
-- **Exemplo de subpastas**:
-  - `assets/images/` - Imagens utilizadas no app.
-  - `assets/fonts/` - Fontes personalizadas.
-  - `assets/icons/` - Ícones customizados.
-
-### 📁 `lib/`
-Pasta principal onde o código-fonte do aplicativo reside. Dentro dela, o código é modularizado em várias subpastas conforme as funcionalidades do app.
-
-#### 📁 `lib/componentes/`
-Armazena **widgets reutilizáveis** e componentes UI que podem ser usados em várias telas do aplicativo. Isso inclui botões customizados, campos de texto, indicadores de carregamento, entre outros.
-
-- **Exemplo**:
-  - `custom_button.dart` - Um botão customizado com estilo próprio.
-  - `custom_input.dart` - Campo de entrada de texto com validações e estilos.
-
-#### 📁 `lib/modelo/`
-Armazena **modelos de dados** que representam as estruturas do sistema. Exemplos típicos incluem classes como `Aluno`, `Resultado`, entre outras.
-
-- **Exemplo**:
-  - `gabarito.dart` - Modelo que representa o gabarito.
-  - `aluno.dart` - Modelo que representa um aluno.
-  - `resultado.dart` - Modelo para armazenar o resultado da prova de um aluno.
-
-#### 📁 `lib/telas/`
-Contém as **telas do aplicativo**. Cada tela geralmente será um arquivo que define o layout e a lógica de controle daquela parte específica do app.
-
-- **Exemplo**:
-  - `cadastro_gabarito.dart` - Tela onde o professor insere o gabarito.
-  - `escanear_gabarito.dart` - Tela para escanear o gabarito do aluno.
-
-#### 📁 `lib/main/`
-Esta pasta contém o ponto de **entrada** do aplicativo, onde são feitas as configurações iniciais e a inicialização das dependências principais do app.
-
-- **Exemplo**:
-  - `main.dart` - Ponto de entrada principal do aplicativo, onde a aplicação é configurada e executada.
-
-### 📁 `database/`
-Contém a **lógica de manipulação de banco de dados**, seja local ou remoto. O banco de dados pode ser usado para armazenar dados como o gabarito e os resultados das provas.
-
-- **Exemplo**:
-  - `local_db.dart` - Manipulação do banco de dados local, como o SQLite.
-
-### 📁 `services/`
-Armazena **serviços especializados** que fornecem funcionalidades específicas do aplicativo, como integração com a câmera, reconhecimento de imagens, ou interação com APIs externas.
-
-- **Exemplo**:
-  - `camera_service.dart` - Serviço para gerenciar a câmera do dispositivo.
-  - `ocr_service.dart` - Serviço para integrar a tecnologia de OCR (Reconhecimento Óptico de Caracteres).
-
-### 📁 `utils/`
-Contém **funções auxiliares** e utilitárias que são utilizadas em várias partes do código. Essas funções geralmente não pertencem a uma lógica específica de negócio ou de UI, mas são essenciais para a implementação do app.
-
-- **Exemplo**:
-  - `image_processing.dart` - Funções auxiliares para processamento de imagens.
-  - `result_calculation.dart` - Funções para cálculo da nota do aluno com base nas respostas.
-
----
-
-Essa estrutura foi projetada para garantir que o código permaneça **bem organizado**, **modular** e **escala** facilmente conforme o projeto cresce. Cada pasta tem um objetivo específico, facilitando a navegação e a manutenção do código.
-
----
 
 ## 📚 Dicas de Git
 
