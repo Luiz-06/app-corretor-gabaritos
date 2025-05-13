@@ -37,7 +37,6 @@ O aplicativo foi desenvolvido com o objetivo de automatizar a correção de prov
 ## 🛠 Tecnologias Utilizadas
 - **Flutter**: Framework para desenvolvimento de aplicativos móveis.
 - **OpenCV**: Para detectar áreas marcadas (círculos, quadrados, marcações).
-- **Tesseract OCR** (opcional): Se o gabarito do aluno tiver letras ou símbolos legíveis.
 - **SQLite**: Armazenamento local dos gabaritos e resultados.
 
 ## 🚀 Requisitos Funcionais
